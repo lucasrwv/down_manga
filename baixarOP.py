@@ -11,5 +11,4 @@ for x in a:
     paginas = paginas.replace(x," ")
 paginas = paginas.split()                   
 for i in range(0,len(paginas)):
-    print (paginas[i])
     urllib.request.urlretrieve(paginas[i],"pagina" + str(i) + ".jpg")
